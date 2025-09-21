@@ -1,0 +1,43 @@
+# Build artifacts
+build/
+install/
+log/
+devel/
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+
+# ROS/ROS2
+*.bag
+*.db3
+*.db3-*
+.ros/
+
+# System files
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Credentials and sensitive data
+.env
+secrets/
+*.key
+*.pem
+
+# Large binary files
+*.so
+*.a
+*.o
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# Vendor packages (document versions in README instead)
+scout_ros2/
+ugv_sdk/

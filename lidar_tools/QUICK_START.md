@@ -1,22 +1,38 @@
-# Quick Start Guide - Complete Sensor Setup
+# Quick Start Guide - Complete Robot System
 
 ## Full System Startup (After Restart)
 
-### Step-by-Step Launch Order:
+### Option 1: Start Everything Automatically (NEW - RECOMMENDED!)
+```bash
+~/robotics_projects/lidar_tools/start_all.sh
+```
+✨ This launches ALL systems in separate terminals:
+- Robot base (movement control)
+- LiDAR sensor
+- Camera sensor
+- RViz2 visualization
 
-#### Terminal 1: Start LiDAR
+### Option 2: Manual Step-by-Step Launch:
+
+#### Terminal 1: Start Robot Base (Movement)
+```bash
+~/robotics_projects/lidar_tools/start_robot_base.sh
+```
+Wait for: "Scout command node ready!"
+
+#### Terminal 2: Start LiDAR
 ```bash
 ~/robotics_projects/lidar_tools/start_lidar.sh
 ```
 Wait for: "RoboSense-LiDAR-Driver is running....."
 
-#### Terminal 2: Start Camera
+#### Terminal 3: Start Camera
 ```bash
 ~/robotics_projects/lidar_tools/start_realsense.sh
 ```
 Wait for: "RealSense Node Is Up!"
 
-#### Terminal 3: Start Visualization
+#### Terminal 4: Start Visualization
 ```bash
 ~/robotics_projects/lidar_tools/start_visualization.sh
 ```
